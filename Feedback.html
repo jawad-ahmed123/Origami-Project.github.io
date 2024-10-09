@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="/style/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid ">
+          <a class="navbar-brand logo" href="/index.html">Origami</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto ms-auto">
+    
+              <li class="nav-item">
+                <a class="nav-link " href="/index.html">Home</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="/Categories page/animal-page.html">Animals</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/Drawer-page.html">Drawers</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/Mother's-page.html">Mother's Day Origami</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/Accordian folding-page.html">Accordion Folding</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/gemston-page.html">Gemstone</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/envelops-page.html">Envelopes</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/box-page.html">Boxes</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/anime-page.html">Anime & Game Characters</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/food-page.html">Foods</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/flower-page.html">Flowers</a></li>
+                        </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Origami
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="/origami page/kids page.html">Origami for Kids</a></li>
+                          <li><a class="dropdown-item" href="/origami page/adult page.html">Origami for adult</a></li>
+                        </ul>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="/gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+    </nav>
+
+    <section>
+      <div class="feedback-container">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form" onsubmit="return validateFeedbackForm()">
+              <input type="hidden" name="access_key" value="46801ea6-ad9e-49e7-b0a8-045a2a99c8a4" />
+              <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+              <input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+              <h2>Feedback Form</h2>
+  
+              <div class="name-section">
+                  <label for="first-name">Name</label>
+                  <div class="name-fields">
+                      <input type="text" id="first-name" name="first_name" placeholder="First Name" required  autocomplete="off" oninput="validateNameField(this)">
+                      <input type="text" id="last-name" name="last_name" placeholder="Last Name" required  autocomplete="off" oninput="validateNameField(this)">
+                  </div>
+                  <div id="name-error" class="error"></div>
+              </div>
+  
+              <div class="rating-section">
+                  <label>Please provide your feedback on the quality of our service.</label>
+                  <div class="rating-options">
+                      <label><input type="radio" name="rating" value="Excellent" required autocomplete="off" > Excellent</label>
+                      <label><input type="radio" name="rating" value="Very Good" required autocomplete="off" > Very Good</label>
+                      <label><input type="radio" name="rating" value="Good" required autocomplete="off" > Good</label>
+                      <label><input type="radio" name="rating" value="Average" required autocomplete="off" > Average</label>
+                      <label><input type="radio" name="rating" value="Poor" required autocomplete="off" > Poor</label>
+                  </div>
+              </div>
+  
+              <div class="suggestion-section">
+                  <label for="suggestions">Do you have suggestions on what we can do to provide you with a better service?</label>
+                  <textarea id="suggestions" name="suggestions" placeholder="Type here..." required autocomplete="off"></textarea>
+              </div>
+  
+              <div class="submit-section">
+                  <input type="submit" value="Submit">
+              </div>
+          </form>
+      </div>
+  </section>
+  
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: Origami@gmail.com</p>
+                <p>Phone: +92 3xxx xxxxxx</p>
+                <p>Address: Aptech Metro Star Karachi.</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/Feedback.html">feedback</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://x.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 Origami.com. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="/javascript/bootstrap.bundle.min.js"></script>
+    <script src="/javascript/javascript.js"></script>
+</body>
+</html>

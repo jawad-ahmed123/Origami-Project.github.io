@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="/style/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid ">
+          <a class="navbar-brand logo" href="/index.html">Origami</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto ms-auto">
+    
+              <li class="nav-item">
+                <a class="nav-link " href="/index.html">Home</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="/Categories page/animal-page.html">Animals</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/Drawer-page.html">Drawers</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/Mother's-page.html">Mother's Day Origami</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/Accordian folding-page.html">Accordion Folding</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/gemston-page.html">Gemstone</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/envelops-page.html">Envelopes</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/box-page.html">Boxes</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/anime-page.html">Anime & Game Characters</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/food-page.html">Foods</a></li>
+                          <li><a class="dropdown-item" href="/Categories page/flower-page.html">Flowers</a></li>
+                        </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Origami
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="/origami page/kids page.html">Origami for Kids</a></li>
+                          <li><a class="dropdown-item" href="/origami page/adult page.html">Origami for adult</a></li>
+                        </ul>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="/gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+    </nav>
+
+    <section>
+      <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" onsubmit="return validateContactForm()">
+          <input type="hidden" name="access_key" value="46801ea6-ad9e-49e7-b0a8-045a2a99c8a4" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+          <h1>Contact Us</h1>
+          <p>Please take a moment to get in touch, we will get back to you shortly.</p>
+    
+          <div class="column">
+            <label for="contact-name">Your Name</label>
+            <input type="text" name="name" id="contact-name" required autocomplete="off" oninput="validateContactNameField()">
+            <span class="error" id="contact-name-error"></span>
+    
+            <label for="contact-email">Email Address</label>
+            <input type="email" name="email" id="contact-email" required autocomplete="off">
+    
+            <label for="contact-phone">Phone Number</label>
+            <input type="tel" name="phone" id="contact-phone" required autocomplete="off" oninput="validateContactPhoneField()">
+            <span class="error" id="contact-phone-error"></span>
+          </div>
+          <div class="column">
+            <label for="contact-message">Message</label>
+            <textarea name="message" id="contact-message" required autocomplete="off"></textarea>
+            <label>
+              <input type="checkbox" name="newsletter" value="yes" required autocomplete="off"> Join our mailing list?
+            </label>
+            <input type="submit" value="Send Message">
+          </div>
+        </form>
+    
+        <div class="map-container">
+          <h2>Our Location</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2215.1321701090856!2d67.15132903787138!3d24.88642572109792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1724751127660!5m2!1sen!2s"
+            width="600" height="685px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  
+
+      <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: Origami@gmail.com</p>
+                <p>Phone: +92 3xxx xxxxxx</p>
+                <p>Address: Aptech Metro Star Karachi.</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/Feedback.html">feedback</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://x.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 Origami.com. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/javascript.js"></script>
+    
+</body>
+</html>
